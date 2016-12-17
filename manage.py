@@ -46,6 +46,7 @@ class Git( pyman.Page ):
         self.add([
             pyman.Action.Cmd( "Commit", "git commit" ),
             GitCommitFile(),
+            pyman.Action.Cmd( "Push", "git push" ),
             pyman.Action.Back()
         ])
 
