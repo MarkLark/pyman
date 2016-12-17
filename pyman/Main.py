@@ -3,17 +3,20 @@ from . import Page
 
 
 class Main( Page ):
-    def __init__( self, title, chars = None ):
+    def __init__( self, title, actions = None, chars = None ):
         self.title         = title
         self.chars         = chars
         self.current       = [ self ]
         self.current_title = ""
-        self.width, self.height = Screen.size()
         self.is_automated  = False
+
+        self.width, self.height = Screen.size()
 
         if self.chars  is None: self.chars = [ "=", "-", ") " ]
 
         super( Main, self ).__init__( "Main Menu", menu = self, parent = self )
+
+        if actions is not None: self.add( actions )
 
     def header( self ):
         Screen.clear()

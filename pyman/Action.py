@@ -27,7 +27,7 @@ class Back( Action ):
 
 
 class Cmd( Action ):
-    def __init__( self, name, cmd ):
+    def __init__( self, name, cmd = "" ):
         super( Cmd, self ).__init__( name )
         self.cmd = cmd
 
