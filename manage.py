@@ -21,7 +21,7 @@ class Doc( pyman.Page ):
 
     def init( self ):
         self.add([
-            pyman.Action.Cmd( "Generate HTML", "cd doc; make html; cd .." ),
+            pyman.Action.Cmd( "Generate HTML", "cd docs; make html; cd .." ),
             pyman.Action.Back()
         ])
 
@@ -47,6 +47,7 @@ class Git( pyman.Page ):
             pyman.Action.Cmd( "Commit", "git commit" ),
             GitCommitFile(),
             pyman.Action.Cmd( "Push", "git push" ),
+            pyman.Action.Cmd( "History", "git log" ),
             pyman.Action.Back()
         ])
 
