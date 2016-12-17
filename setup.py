@@ -10,7 +10,7 @@ from setuptools import setup
 setup(
     name='pyman',
     version='0.1.0a1',
-    url='http://www.mlit.net.au/pyman/',
+    url='https://github.com/MarkLark/pyman',
     license='MIT',
     author='Mark Pittaway',
     author_email='mark.pittaway@mlit.net.au',
