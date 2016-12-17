@@ -22,6 +22,7 @@ class Doc( pyman.Page ):
     def init( self ):
         self.add([
             pyman.Action.Cmd( "Generate HTML", "cd docs; make html; cd .." ),
+            pyman.Action.Cmd( "Clean", "cd docs; make clean; cd .." ),
             pyman.Action.Back()
         ])
 
