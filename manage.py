@@ -8,6 +8,8 @@ class PyPi( pyman.Page ):
 
     def init( self ):
         self.add([
+            pyman.Action.Cmd( "Package Source", "python setup.py sdist" ),
+            pyman.Action.Cmd( "Package Wheel", "python setup.py bdist_wheel" ),
             pyman.Action.Cmd( "Upload", "twine upload dist/*" ),
             pyman.Action.Back()
         ])
