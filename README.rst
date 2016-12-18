@@ -67,9 +67,9 @@ From here you add other Pages or Actions
 
 pyman.Action.Exit is one of the in-built actions. Other inbuilt actions include:
 
-* :class:`pyman.Actions.Cmd`
-* :class:`pyman.Actions.Back`
-* :class:`pyman.Actions.Exit`
+* pyman.Actions.Cmd
+* pyman.Actions.Back
+* pyman.Actions.Exit
 
 And finally, you start the CLI with:
 
@@ -78,4 +78,5 @@ And finally, you start the CLI with:
     menu.cli()
 
 Documentation: `ReadTheDocs <http://pyman.readthedocs.io/>`_
+
 Source Code: `GitHub <https://github.com/MarkLark/pyman>`_
