@@ -8,6 +8,7 @@ v0.1.1a2 - Dec 2016
 - New inbuilt page for generating Documentation using sphinx
 - New inbuilt page for Git commands: commit, commit files, add files, push commits, show log
 - New inbuilt page for running Python tests using NoseTest
+- Added new actions for pyman.Doc: 'Generate Single-Page HTML' and 'Generate Multi-Page HTML'
 
 
 v0.1.0a1 - Dec 2016

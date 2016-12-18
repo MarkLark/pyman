@@ -7,7 +7,8 @@ class Doc( Page ):
 
     def init( self ):
         self.add([
-            Action.Cmd( "Generate HTML", "cd docs; make html; cd .." ),
+            Action.Cmd( "Generate Multi-Page HTML", "cd docs; make html; cd .." ),
+            Action.Cmd( "Generate Single-Page HTML", "cd docs; make html; cd .." ),
             Action.Cmd( "Clean", "cd docs; make clean; cd .." ),
             Action.Back()
         ])
