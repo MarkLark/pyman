@@ -1,4 +1,4 @@
-__all__ = [ "Action", "Main", "Page", "Screen", "PyPi", "Doc", "Git" ]
+__all__ = [ "Action", "Main", "Page", "Screen", "PyPi", "Doc", "Git", "NoseTest" ]
 
 __version__ = '0.1.0a1'
 
@@ -9,3 +9,4 @@ import Screen
 from PyPi import PyPi
 from Doc import Doc
 from Git import Git
+from NoseTest import NoseTest
