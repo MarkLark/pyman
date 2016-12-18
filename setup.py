@@ -9,7 +9,7 @@ from setuptools import setup
 
 setup(
     name='pyman',
-    version='0.1.0a1',
+    version='0.1.1a2',
     url='https://github.com/MarkLark/pyman',
     license='MIT',
     author='Mark Pittaway',
