@@ -1,0 +1,22 @@
+Flask-DataStore Change Log
+==========================
+
+v0.1.1a2 - Dec 2016
+-------------------
+- Ability to supply actions/pages when creating a pyman.Main instance
+- New inbuilt page for PyPi, to generate packages and uploading them to PyPi
+- New inbuilt page for generating Documentation using sphinx
+- New inbuilt page for Git commands: commit, commit files, add files, push commits, show log
+- New inbuilt page for running Python tests using NoseTest
+
+
+v0.1.0a1 - Dec 2016
+-------------------
+- Initial working version
+- Inbuilt Actions: Cmd, Back, Exit
+- Make title borders fill width of window (even on window resize)
+- Configurable display characters (title border, menu border, menu entry prefix)
+- Ability to provide string of commands to run, for automating the runtime
+- Stacked pages, allowing multiple page depths, and popping them back
+- Ctrl+C and 'q' quits the menu
+- Action class stores references to it's parent menu, and the Main Menu
