@@ -7,5 +7,5 @@ pyman.Main( "pyman - Manage", [
     pyman.PyPi(),
     pyman.NoseTest(),
     pyman.Git(),
-    pyman.Action.Exit()
+    pyman.Actions.Exit()
 ]).cli()

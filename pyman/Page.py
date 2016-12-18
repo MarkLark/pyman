@@ -1,5 +1,3 @@
-
-
 class Page( object ):
     def __init__( self, name, parent = None, menu = None ):
         self.name    = name

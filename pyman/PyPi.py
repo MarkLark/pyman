@@ -1,4 +1,4 @@
-from . import Page, Action
+from . import Page, Actions
 
 
 class PyPi( Page ):
@@ -7,8 +7,8 @@ class PyPi( Page ):
 
     def init( self ):
         self.add([
-            Action.Cmd( "Package Source", "python setup.py sdist" ),
-            Action.Cmd( "Package Wheel", "python setup.py bdist_wheel" ),
-            Action.Cmd( "Upload", "twine upload dist/*" ),
-            Action.Back()
+            Actions.Cmd( "Package Source", "python setup.py sdist" ),
+            Actions.Cmd( "Package Wheel", "python setup.py bdist_wheel" ),
+            Actions.Cmd( "Upload", "twine upload dist/*" ),
+            Actions.Back()
         ])

@@ -1,4 +1,4 @@
-from . import Page, Action
+from . import Page, Actions
 
 
 class Git( Page ):
@@ -7,16 +7,16 @@ class Git( Page ):
 
     def init( self ):
         self.add([
-            Action.Cmd( "Commit", "git commit" ),
+            Actions.Cmd( "Commit", "git commit" ),
             CommitFile(),
             AddFile(),
-            Action.Cmd( "Push", "git push" ),
-            Action.Cmd( "History", "git log" ),
-            Action.Back()
+            Actions.Cmd( "Push", "git push" ),
+            Actions.Cmd( "History", "git log" ),
+            Actions.Back()
         ])
 
 
-class FileCommand( Action.Cmd ):
+class FileCommand( Actions.Cmd ):
     def run( self ):
         filename = raw_input( "Filename: " )
         self.cmd += " %s" % filename

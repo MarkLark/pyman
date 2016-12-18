@@ -1,4 +1,4 @@
-from . import Page, Action
+from . import Page, Actions
 
 
 class NoseTest( Page ):
@@ -7,7 +7,7 @@ class NoseTest( Page ):
 
     def init( self ):
         self.add([
-            Action.Cmd( "Without Stdout", "nosetests -v tests" ),
-            Action.Cmd( "With Stdout", "nosetests -vs tests" ),
-            Action.Back()
+            Actions.Cmd( "Without Stdout", "nosetests -v tests" ),
+            Actions.Cmd( "With Stdout", "nosetests -vs tests" ),
+            Actions.Back()
         ])

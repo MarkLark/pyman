@@ -1,4 +1,4 @@
-from . import Page, Action
+from . import Page, Actions
 
 
 class Doc( Page ):
@@ -7,8 +7,8 @@ class Doc( Page ):
 
     def init( self ):
         self.add([
-            Action.Cmd( "Generate Multi-Page HTML", "cd docs; make html; cd .." ),
-            Action.Cmd( "Generate Single-Page HTML", "cd docs; make singlehtml; cd .." ),
-            Action.Cmd( "Clean", "cd docs; make clean; cd .." ),
-            Action.Back()
+            Actions.Cmd( "Generate Multi-Page HTML", "cd docs; make html; cd .." ),
+            Actions.Cmd( "Generate Single-Page HTML", "cd docs; make singlehtml; cd .." ),
+            Actions.Cmd( "Clean", "cd docs; make clean; cd .." ),
+            Actions.Back()
         ])

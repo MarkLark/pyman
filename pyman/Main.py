@@ -42,7 +42,7 @@ class Main( Page ):
         self.current_title = title
 
     def cli( self, commands = None ):
-        from . import Page, Action
+        from . import Page, Actions
 
         # If a list of commands is provided as a string, convert them to an array
         if commands is not None:
@@ -64,8 +64,8 @@ class Main( Page ):
                 rtn = self.current[-1].run( int( choice ) )
 
                 if   isinstance( rtn, Page        ): self.current.append( rtn )
-                elif isinstance( rtn, Action.Back ): self.current.pop()
-                elif isinstance( rtn, Action.Exit ): break
+                elif isinstance( rtn, Actions.Back ): self.current.pop()
+                elif isinstance( rtn, Actions.Exit ): break
             except ValueError:
                 print "Incorrect value, try again...."
                 if commands is None:  raw_input( "" )
