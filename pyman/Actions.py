@@ -1,7 +1,8 @@
-from . import Action
+from .Action import Action
 
 
 class Exit( Action ):
+    """Exit the CLI"""
     def __init__( self ):
         super( Exit, self ).__init__( "Exit" )
 
@@ -10,14 +11,16 @@ class Exit( Action ):
 
 
 class Back( Action ):
+    """Go back one page"""
     def __init__( self ):
         super( Back, self ).__init__( "Back" )
 
 
 class Cmd( Action ):
+    """Run a command in the terminal"""
     def __init__( self, name, cmd = "" ):
         super( Cmd, self ).__init__( name )
-        self.cmd = cmd
+        self.cmd = cmd #: The command to run
 
     def run( self ):
         from os import system

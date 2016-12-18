@@ -4,7 +4,7 @@ __version__ = '0.1.0a1'
 
 from Page import Page
 from Main import Main
-from Action import Action
+import Action
 import Screen
 import Actions
 from PyPi import PyPi

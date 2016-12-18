@@ -17,6 +17,7 @@ This way you do not have to remember commands to run, you simply navigate your C
 
     introduction
     actions
+    pages
 
 
 Indices and tables

@@ -7,7 +7,7 @@ class Git( Page ):
 
     def init( self ):
         self.add([
-            Actions.Cmd( "Commit", "git commit" ),
+            Actions.Cmd( "Commit", "git commit -a" ),
             CommitFile(),
             AddFile(),
             Actions.Cmd( "Push", "git push" ),

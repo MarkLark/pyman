@@ -1,6 +1,24 @@
 Introduction To PyMan
 #####################
 
+PyMan is a small library that allows you to build your own CLI to manage your projects.
+This way you do not have to remember commands to run, you simply navigate your CLI to run those commands.
+
+Installing
+==========
+
+PyMan is available from the PyPi repository.
+
+This means that all you have to do to install PyMan is run the following in a console:
+
+.. code-block:: console
+
+    $ pip install pyman
+    Collecting pyman
+      Using cached pyman-0.1.0a1-py2.py3-none-any.whl
+    Installing collected packages: pyman
+    Successfully installed pyman-0.1.0a1
+
 Minimal Example
 ===============
 
@@ -49,9 +67,9 @@ From here you add other Pages or Actions
 
 pyman.Action.Exit is one of the in-built actions. Other inbuilt actions include:
 
-* pyman.Action.Exit()
-* pyman.Action.Back()
-* pyman.Action.Cmd( <name>, <bash command> )
+* pyman.Actions.Exit()
+* pyman.Actions.Back()
+* pyman.Actions.Cmd( <name>, <bash command> )
 
 And finally, you start the CLI with:
 
