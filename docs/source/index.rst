@@ -19,6 +19,7 @@ This way you do not have to remember commands to run, you simply navigate your C
     actions
     pages
     inbuilt_pages
+    custom
 
 
 Indices and tables
