@@ -9,7 +9,8 @@ v0.1.1a2 - Dec 2016
 - New inbuilt page for Git commands: commit, commit files, add files, push commits, show log
 - New inbuilt page for running Python tests using NoseTest
 - Added new actions for pyman.Doc: 'Generate Single-Page HTML' and 'Generate Multi-Page HTML'
-
+- Added new actions for pyman.PyPi: 'Clean Dist' to delete the 'dist' folder
+- Moved inbuilt actions from pyman.Action to pyman.Actions
 
 v0.1.0a1 - Dec 2016
 -------------------
