@@ -1,6 +1,10 @@
 Actions
 #######
 
+Each page is made up of a list of actions.
+
+An action can be one of the inbuilt actions, a Page, or your own custom Action.
+
 Inbuilt Actions
 ===============
 
@@ -55,9 +59,6 @@ This command will exit out of the CLI
 
 Action Class
 ============
-
-The Action Class
-----------------
 
 .. module:: pyman.Action
 

@@ -67,9 +67,9 @@ From here you add other Pages or Actions
 
 pyman.Action.Exit is one of the in-built actions. Other inbuilt actions include:
 
-* pyman.Actions.Exit()
-* pyman.Actions.Back()
-* pyman.Actions.Cmd( <name>, <bash command> )
+* :class:`pyman.Actions.Cmd`
+* :class:`pyman.Actions.Back`
+* :class:`pyman.Actions.Exit`
 
 And finally, you start the CLI with:
 
