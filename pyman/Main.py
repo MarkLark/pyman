@@ -63,7 +63,7 @@ class Main( Page ):
                 if choice.lower() == "q": break
                 rtn = self.current[-1].run( int( choice ) )
 
-                if   isinstance( rtn, Page        ): self.current.append( rtn )
+                if   isinstance( rtn, Page         ): self.current.append( rtn )
                 elif isinstance( rtn, Actions.Back ): self.current.pop()
                 elif isinstance( rtn, Actions.Exit ): break
             except ValueError:

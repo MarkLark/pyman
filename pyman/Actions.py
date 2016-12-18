@@ -6,9 +6,6 @@ class Exit( Action ):
     def __init__( self ):
         super( Exit, self ).__init__( "Exit" )
 
-    def run( self ):
-        return self
-
 
 class Back( Action ):
     """Go back one page"""

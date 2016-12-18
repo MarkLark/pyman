@@ -1,4 +1,4 @@
-:tocdepth: 2
+:tocdepth: 3
 
 .. pyman documentation master file, created by
    sphinx-quickstart on Sat Dec 17 19:06:15 2016.
@@ -12,7 +12,7 @@ PyMan is a small library that allows you to build your own CLI to manage your pr
 This way you do not have to remember commands to run, you simply navigate your CLI to run those commands.
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 3
     :caption: Contents:
 
     introduction

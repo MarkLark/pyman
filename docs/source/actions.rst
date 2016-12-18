@@ -4,17 +4,53 @@ Actions
 Inbuilt Actions
 ===============
 
+Terminal Command
+----------------
+
+This command allows you to execute a command in the terminal
+
+.. code-block:: python
+
+    menu.add([
+        pyman.Actions.Cmd( "Hello World", "echo 'Hello World'" )
+    ])
+
 .. module:: pyman.Actions
 
 .. autoclass:: Cmd
+    :show-inheritance:
 
     .. attribute:: cmd
 
         The command to run
 
+Back
+----
+
+This command will send you back one page in the menu
+
+.. code-block:: python
+
+    menu.add([
+        pyman.Actions.Back()
+    ])
+
 .. autoclass:: Back
+    :show-inheritance:
+
+Exit
+----
+
+This command will exit out of the CLI
+
+.. code-block:: python
+
+    menu.add([
+        pyman.Actions.Exit()
+    ])
 
 .. autoclass:: Exit
+    :show-inheritance:
 
 
 Action Class
