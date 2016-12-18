@@ -15,7 +15,6 @@ This way you do not have to remember commands to run, you simply navigate your C
     :maxdepth: 2
     :caption: Contents:
 
-    index
     introduction
 
 
