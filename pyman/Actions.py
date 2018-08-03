@@ -1,26 +1,28 @@
+from . import Screen
 from .Action import Action
+from os import system
 
 
-class Exit( Action ):
+class Exit(Action):
     """Exit the CLI"""
-    def __init__( self ):
-        super( Exit, self ).__init__( "Exit" )
+    def __init__(self):
+        Action.__init__(self, "Exit")
 
 
-class Back( Action ):
+class Back(Action):
     """Go back one page"""
     def __init__( self ):
-        super( Back, self ).__init__( "Back" )
+        Action.__init__(self, "Back")
 
 
-class Cmd( Action ):
+class Cmd(Action):
     """Run a command in the terminal"""
-    def __init__( self, name, cmd = "" ):
-        super( Cmd, self ).__init__( name )
-        self.cmd = cmd #: The command to run
+    def __init__(self, name, cmd=""):
+        Action.__init__(self, name)
+        self.cmd = cmd  # The command to run
 
-    def run( self ):
-        from os import system
-        system( self.cmd )
+    def run(self):
+        system(self.cmd)
 
-        if not self.menu.is_automated: raw_input( "\nFinished...." )
+        if not self.menu.is_automated:
+            Screen.user_input("\nFinished....")

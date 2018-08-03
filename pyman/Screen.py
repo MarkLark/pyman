@@ -11,4 +11,19 @@ def size():
 
 
 def clear():
-    stdout.write("\033c")
+    write("\033c")
+
+
+def user_input(prompt = ""):
+    """Get the user input
+
+    This is required for Python2/3 compatability
+    """
+    try:
+        return raw_input(prompt)
+    except NameError:
+        return input(prompt)
+
+
+def write(output):
+    stdout.write(output)

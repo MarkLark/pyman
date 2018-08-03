@@ -1,6 +1,6 @@
 import pyman
 
 
-class BaseTest( object ):
+class BaseTest:
     def setup( self ):
-        self.cli = pyman.Main( "PyMan - Test Interface" )
+        self.cli = pyman.Main("PyMan - Test Interface")

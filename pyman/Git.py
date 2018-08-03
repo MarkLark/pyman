@@ -1,33 +1,33 @@
-from . import Page, Actions
+from . import Page, Actions, Screen
 
 
-class Git( Page ):
+class Git(Page):
     def __init__( self ):
-        super( Git, self ).__init__( "Git" )
+        Page.__init__(self, "Git")
 
     def init( self ):
         self.add([
-            Actions.Cmd( "Commit", "git commit -a" ),
+            Actions.Cmd("Commit", "git commit -a"),
             CommitFile(),
             AddFile(),
-            Actions.Cmd( "Push", "git push" ),
-            Actions.Cmd( "History", "git log" ),
+            Actions.Cmd("Push", "git push"),
+            Actions.Cmd("History", "git log"),
             Actions.Back()
         ])
 
 
-class FileCommand( Actions.Cmd ):
-    def run( self ):
-        filename = raw_input( "Filename: " )
+class FileCommand(Actions.Cmd):
+    def run(self):
+        filename = Screen.user_input("Filename: ")
         self.cmd += " %s" % filename
-        super( FileCommand, self ).run()
+        Actions.Cmd.run(self)
 
 
-class CommitFile( FileCommand ):
-    def __init__( self ):
-        super( CommitFile, self ).__init__( "Commit File", "git commit" )
+class CommitFile(FileCommand):
+    def __init__(self):
+        FileCommand.__init__(self, "Commit File", "git commit")
 
 
-class AddFile( FileCommand ):
-    def __init__( self ):
-        super( AddFile, self ).__init__( "Add File", "git add" )
+class AddFile(FileCommand):
+    def __init__(self):
+        FileCommand.__init__(self, "Add File", "gid add")

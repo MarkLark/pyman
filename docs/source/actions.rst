@@ -16,7 +16,7 @@ This command allows you to execute a command in the terminal
 .. code-block:: python
 
     menu.add([
-        pyman.Actions.Cmd( "Hello World", "echo 'Hello World'" )
+        pyman.Actions.Cmd("Hello World", "echo 'Hello World'")
     ])
 
 .. module:: pyman.Actions

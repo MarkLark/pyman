@@ -15,9 +15,9 @@ This means that all you have to do to install PyMan is run the following in a co
 
     $ pip install pyman
     Collecting pyman
-      Using cached pyman-0.1.0a1-py2.py3-none-any.whl
+      Using cached pyman-0.1.2-py2.py3-none-any.whl
     Installing collected packages: pyman
-    Successfully installed pyman-0.1.0a1
+    Successfully installed pyman-0.1.2
 
 Minimal Example
 ===============
@@ -26,7 +26,7 @@ Minimal Example
 
     import pyman
 
-    pyman.Main( "PyMan - Menu Example", [
+    pyman.Main("PyMan - Menu Example", [
         pyman.Action.Cmd( "Hello World", "echo 'Testing PyMan'" ),
         pyman.Action.Exit()
     ]).cli()
@@ -55,7 +55,7 @@ You start off by instanciating the 'Main Menu' class, providing the title you wi
 
 .. code-block:: python
 
-    menu = pyman.Main( "PyMan - Menu Example" )
+    menu = pyman.Main("PyMan - Menu Example")
 
 From here you add other Pages or Actions
 
