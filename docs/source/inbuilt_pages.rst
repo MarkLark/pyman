@@ -125,3 +125,33 @@ menu:
     ------------------------------------------
 
     Choice:
+
+Webpack
+====
+
+This page allows you to build js distribution files and/or run webpack-serve
+
+code:
+
+.. code-block:: python
+
+    menu.add([
+        pyman.Webpack()
+    ])
+
+menu:
+
+.. code-block:: console
+
+    ================================================================
+                          PyMan - Menu Example
+    ================================================================
+
+    webpack
+    ------------------------------------------
+    1) Dev Server
+    2) Build
+    3) Back
+    ------------------------------------------
+
+    Choice:

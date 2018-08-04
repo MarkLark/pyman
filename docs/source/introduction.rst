@@ -15,9 +15,9 @@ This means that all you have to do to install PyMan is run the following in a co
 
     $ pip install pyman
     Collecting pyman
-      Using cached pyman-0.1.2-py2.py3-none-any.whl
+      Using cached pyman-0.1.3-py2.py3-none-any.whl
     Installing collected packages: pyman
-    Successfully installed pyman-0.1.2
+    Successfully installed pyman-0.1.3
 
 Minimal Example
 ===============

@@ -2,10 +2,10 @@ from . import Page, Actions, Screen
 
 
 class Git(Page):
-    def __init__( self ):
+    def __init__(self):
         Page.__init__(self, "Git")
 
-    def init( self ):
+    def init(self):
         self.add([
             Actions.Cmd("Commit", "git commit -a"),
             CommitFile(),

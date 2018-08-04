@@ -9,7 +9,7 @@ with open( path.join( root_dir, 'README.rst' ), encoding = 'utf-8' ) as f:
 
 setup(
     name='pyman',
-    version='0.1.2',
+    version='0.1.3',
     url='https://github.com/MarkLark/pyman',
     license='MIT',
     author='Mark Pittaway',

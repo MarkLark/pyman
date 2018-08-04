@@ -1,5 +1,15 @@
 Flask-DataStore Change Log
 ==========================
+v0.1.3 - Aug 2018
+-----------------
+- New inbuilt page for Webpack, the generate js distribution files or run webpack-serve
+- NoseTest now has an optional argument to provide the path to the test folder
+
+v0.1.2 - Aug 2018
+-----------------
+- Now compatible with Python3+
+- Added Screen.write to print to the console (replaces Python print statements)
+- Added Screen.user_input to obtain user keyboard input (replaces Python raw_input function)
 
 v0.1.1a3 - Dec 2016
 -------------------
